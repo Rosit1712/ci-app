@@ -15,27 +15,67 @@
 </head>
 <body>
 
-<!-- navbar -->
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <style>
 
-<div class="container">
-  <a class="navbar-brand" href="#">Tugas</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
+    html {
+      position: relative;
+    }
 
-  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-    <div class="navbar-nav">
-      <a class="nav-item nav-link" href="<?= base_url(); ?>">Home <span class="sr-only">(current)</span></a>
-      <a class="nav-item nav-link" href="<?= base_url(); ?>mobil">Penjualan Mobil</a>
-      <a class="nav-item nav-link" href="#">Tentang</a>
+    body {
+      margin-bottom: 100px;
+    }
 
-    </div>
-        <form method="post" action="<?php echo site_url('mobil/cari'); ?> ">
-          <input type="text" name="cari" placeholder="search">
-          <input type="submit" name="search_submit" value="cari">
-      </form>
-  </div>
+    .nav {
+      padding: 5px;
+    }
+    
+    /*.formd {
+      margin-right: 130px;
+    }*/
+
+    .formd .nyari {
+      margin-left: 30px;
+    }
+
+    .jumbotron {
+      margin-top: -70px;
+      height: 400px;
+      width: 100%;
+      padding-top: 130px;
+      text-align: center;
+      background-image: url('img/1.jpg');
+      background-attachment: fixed;
+    }
+
+  </style>
+
+<ul class="nav justify-content-center">
+
+  <li class="nav-item">
+    <a class="nav-link text-light" href="<?= base_url(); ?>">Home<span class="sr-only">(current)</span></a>
+  </li>
+
+  <li class="nav-item">
+    <a class="nav-link text-light" href="<?= base_url(); ?>mobil">Penjualan Mobil</a>
+  </li>
+
+  <li class="nav-item">
+    <a class="nav-link text-light" href="<?= base_url(); ?>tentang/tentangkhami">Tentang</a>
+  </li>
+
+  <li class="nav-item">
+    <a class="nav-link text-light" href="<?= base_url() ?>Home/logout">Logout</a>
+  </li>
+
+  <form method="post" class="form-inline my-2 my-lg-0 formd" action="<?php echo site_url('mobil/cari'); ?> ">
+    <input type="text" name="cari" placeholder="search" class="form-control mr-mg-2 cari">
+    <input type="submit" name="search_submit" value="cari" class="btn btn-outline-success my-2 my-sm-90 nyari">
+  </form>
+
+</ul>
+
+<div class="jumbotron jumbotron-fluid">
+  <h1 class="display-4 text-light">Penjualan Mobil</h1>
+  <p class="lead text-light">Menerima Pesanan , No nego</p>
+  <p class="lead text-light">CopyRight QWERTY</p>
 </div>
-
-</nav>

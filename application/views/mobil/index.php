@@ -1,9 +1,17 @@
+
 <style type="text/css">
 	.badge {
-	margin-left: 39px;
-}
+		margin-left: 39px;
+	}
+	.d, .f {
+		transform: translateX(35%);
+	}
+	.f {
+		transform: translateX(43%);
+	}
 </style>
 
+<section class="main">
 <div class="container">
 
 	<?php if( $this->session->flashdata('tampil') ) : ?>
@@ -18,16 +26,10 @@
 			</div>
 		</div>
 	<?php endif; ?>
-
-	<div class="row mt-3">
-		<div class="col-md-6">
-			<a href="<?= base_url(); ?>mobil/tambah" class="btn btn-primary">Tambah Data</a>
-		</div>
-	</div>
 	
-	<div class="row mt-3">
+	<div class="row mt-3 d">
 		<div class="col-mt-3">
-			<h3>Daftar Mobil</h3>
+			<h3 class="text-center">Daftar Mobil</h3>
 			<ul class="list-group mt-3">
 			<?php foreach( $mobil as $tpl ) : ?>
 		  		<li class="list-group-item">
@@ -46,4 +48,11 @@
 		</div>
 	</div>
 
+	<div class="row mt-3 f">
+		<div class="col-md-6">
+			<a href="<?= base_url(); ?>mobil/tambah" class="btn btn-primary text-center">Tambah Data</a>
+		</div>
+	</div>
+
 </div>
+</section>
