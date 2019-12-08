@@ -6,6 +6,14 @@ class Mobil_model extends CI_model {
 		return $this->db->get('mobil')->result_array(); // tampilin data dari database dari tabel mahasiswa
 	}
 
+	public function tambahDataAkun() {
+		$data = [
+			"username" => $this->input->post('username', true),
+			"password" => $this->input->post('password', true)
+		];
+		$this->db->insert('admin', $data);
+	}
+
 	// masukin data ke database
 	public function tambahDatamobil() {
 		$data = [

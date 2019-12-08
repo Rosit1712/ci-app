@@ -32,15 +32,15 @@
 		<div class="row">
 			<div class="col-sm-4">
 				<img src="img/2.jpg" alt="cuma gambar" class="figure-img img-fluid rounded">
-				<figcaption class="figure-caption">A caption for the above image.</figcaption>
+				<figcaption class="figure-caption">Sport</figcaption>
 			</div>
 			<div class="col-sm-4">
 				<img src="img/3.jpg" alt="cuma gambar" class="figure-img img-fluid rounded">
-				<figcaption class="figure-caption">A caption for the above image.</figcaption>
+				<figcaption class="figure-caption">Pick UP</figcaption>
 			</div>
 			<div class="col-sm-4">
 				<img src="img/4.jpg" alt="cuma gambar" class="figure-img img-fluid rounded">
-				<figcaption class="figure-caption">A caption for the above image.</figcaption>
+				<figcaption class="figure-caption">Berat</figcaption>
 			</div>
 		</div>
 	</div>
