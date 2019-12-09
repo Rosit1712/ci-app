@@ -68,6 +68,10 @@
   </li>
 
   <li class="nav-item">
+    <a class="nav-link text-light" href="<?= base_url(); ?>laporantran">Laporan</a>
+  </li>
+
+  <li class="nav-item">
     <a class="nav-link text-light" href="<?= base_url() ?>Home/logout">Logout</a>
   </li>
 

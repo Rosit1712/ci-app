@@ -55,5 +55,5 @@ class Mobil_model extends CI_model {
 			$this->db->or_like('warna',$ygdicari);
 			$this->db->or_like('tipe',$ygdicari);
 			return $this->db->get()->result();		
-	}
+	}	
 }
